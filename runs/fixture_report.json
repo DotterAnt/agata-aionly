@@ -1,0 +1,729 @@
+{
+  "report_id": "report-29b67087f377",
+  "spec_id": "fixture-create-output",
+  "artifact_path": "C:\\diplomamunka\\examples\\fixture_test.json",
+  "phase": "replay",
+  "status": "pass",
+  "policy": {
+    "name": "observed-visible-controls",
+    "visible_controls_only": false,
+    "allow_shortcuts": false,
+    "allow_clipboard": false,
+    "allow_relative_coordinates": true,
+    "allow_file_read_verification": true,
+    "max_wait_seconds": 8.0
+  },
+  "started_at": "2026-10-06T08:25:49.428+00:00",
+  "ended_at": "2026-10-06T08:25:51.310+00:00",
+  "step_results": [
+    {
+      "step_id": "S1",
+      "original_action": "Open the fixture desktop application.",
+      "original_expected": "A window titled Desktop Agent Fixture is visible.",
+      "interpreted_route": [
+        "launch: Launch requested for pid 6400.",
+        "wait_for_window: Observed window 'Desktop Agent Fixture'."
+      ],
+      "status": "pass",
+      "evidence": [
+        {
+          "kind": "window",
+          "summary": "Observed window 'Desktop Agent Fixture' with 5 visible child controls.",
+          "data": {
+            "handle": 3868242,
+            "title": "Desktop Agent Fixture",
+            "class_name": "TkTopLevel",
+            "rect": [
+              180,
+              140,
+              616,
+              399
+            ],
+            "controls": [
+              {
+                "handle": 3670424,
+                "text": "",
+                "class_name": "TkChild",
+                "rect": [
+                  188,
+                  171,
+                  608,
+                  391
+                ]
+              },
+              {
+                "handle": 2098832,
+                "text": "",
+                "class_name": "Static",
+                "rect": [
+                  218,
+                  316,
+                  568,
+                  342
+                ]
+              },
+              {
+                "handle": 2491084,
+                "text": "",
+                "class_name": "Button",
+                "rect": [
+                  308,
+                  255,
+                  448,
+                  289
+                ]
+              },
+              {
+                "handle": 1901744,
+                "text": "",
+                "class_name": "TkChild",
+                "rect": [
+                  308,
+                  205,
+                  548,
+                  233
+                ]
+              },
+              {
+                "handle": 1377830,
+                "text": "",
+                "class_name": "Static",
+                "rect": [
+                  218,
+                  205,
+                  298,
+                  231
+                ]
+              }
+            ]
+          },
+          "path": null,
+          "timestamp": "2026-10-06T08:25:49.857+00:00"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "step_id": "S2",
+      "original_action": "Enter the literal message into the Message field.",
+      "original_expected": "The intended input has been delivered to the focused editing surface; correctness is later verified through the produced file.",
+      "interpreted_route": [
+        "click_relative: Clicked relative to observed window 'Desktop Agent Fixture'.",
+        "type_text: Literal text delivery requested; correctness requires a later readback or assertion."
+      ],
+      "status": "pass",
+      "evidence": [
+        {
+          "kind": "window",
+          "summary": "Observed window 'Desktop Agent Fixture' with 5 visible child controls.",
+          "data": {
+            "handle": 3868242,
+            "title": "Desktop Agent Fixture",
+            "class_name": "TkTopLevel",
+            "rect": [
+              180,
+              140,
+              616,
+              399
+            ],
+            "controls": [
+              {
+                "handle": 3670424,
+                "text": "",
+                "class_name": "TkChild",
+                "rect": [
+                  188,
+                  171,
+                  608,
+                  391
+                ]
+              },
+              {
+                "handle": 2098832,
+                "text": "",
+                "class_name": "Static",
+                "rect": [
+                  218,
+                  316,
+                  568,
+                  342
+                ]
+              },
+              {
+                "handle": 2491084,
+                "text": "",
+                "class_name": "Button",
+                "rect": [
+                  308,
+                  255,
+                  448,
+                  289
+                ]
+              },
+              {
+                "handle": 1901744,
+                "text": "",
+                "class_name": "TkChild",
+                "rect": [
+                  308,
+                  205,
+                  548,
+                  233
+                ]
+              },
+              {
+                "handle": 1377830,
+                "text": "",
+                "class_name": "Static",
+                "rect": [
+                  218,
+                  205,
+                  298,
+                  231
+                ]
+              }
+            ]
+          },
+          "path": null,
+          "timestamp": "2026-10-06T08:25:50.011+00:00"
+        }
+      ],
+      "notes": []
+    },
+    {
+      "step_id": "S3",
+      "original_action": "Use the Create Output button.",
+      "original_expected": "The application creates a fresh output file containing the entered message.",
+      "interpreted_route": [
+        "click_relative: Clicked relative to observed window 'Desktop Agent Fixture'.",
+        "wait_for_file: Observed output file 'runs\\fixture-output.txt'.",
+        "assert_file_contains: Expected text was present."
+      ],
+      "status": "pass",
+      "evidence": [
+        {
+          "kind": "window",
+          "summary": "Observed window 'Desktop Agent Fixture' with 5 visible child controls.",
+          "data": {
+            "handle": 3868242,
+            "title": "Desktop Agent Fixture",
+            "class_name": "TkTopLevel",
+            "rect": [
+              180,
+              140,
+              616,
+              399
+            ],
+            "controls": [
+              {
+                "handle": 3670424,
+                "text": "",
+                "class_name": "TkChild",
+                "rect": [
+                  188,
+                  171,
+                  608,
+                  391
+                ]
+              },
+              {
+                "handle": 2098832,
+                "text": "",
+                "class_name": "Static",
+                "rect": [
+                  218,
+                  316,
+                  568,
+                  342
+                ]
+              },
+              {
+                "handle": 2491084,
+                "text": "",
+                "class_name": "Button",
+                "rect": [
+                  308,
+                  255,
+                  448,
+                  289
+                ]
+              },
+              {
+                "handle": 1901744,
+                "text": "",
+                "class_name": "TkChild",
+                "rect": [
+                  308,
+                  205,
+                  548,
+                  233
+                ]
+              },
+              {
+                "handle": 1377830,
+                "text": "",
+                "class_name": "Static",
+                "rect": [
+                  218,
+                  205,
+                  298,
+                  231
+                ]
+              }
+            ]
+          },
+          "path": null,
+          "timestamp": "2026-10-06T08:25:50.506+00:00"
+        },
+        {
+          "kind": "file",
+          "summary": "Observed fresh file runs\\fixture-output.txt.",
+          "data": {
+            "path": "runs\\fixture-output.txt",
+            "mtime": 1791275150.5991645,
+            "size": 24
+          },
+          "path": null,
+          "timestamp": "2026-10-06T08:25:50.800+00:00"
+        },
+        {
+          "kind": "file-content",
+          "summary": "Read 24 characters from runs\\fixture-output.txt.",
+          "data": {
+            "path": "runs\\fixture-output.txt",
+            "expected_text": "hello from desktop agent"
+          },
+          "path": null,
+          "timestamp": "2026-10-06T08:25:50.805+00:00"
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "actions": [
+    {
+      "action_id": "action-c106b2fee747",
+      "step_id": null,
+      "phase": "replay",
+      "intended_action": "Remove any previous fixture output before GUI execution so stale files cannot satisfy this run.",
+      "attempted_action": "remove_file",
+      "delivered_input": {
+        "path": "runs\\fixture-output.txt",
+        "existed_before": false
+      },
+      "observed_consequence": "File absence checked for runs\\fixture-output.txt.",
+      "fallback_reason": null,
+      "status": "pass",
+      "evidence": [],
+      "started_at": "2026-10-06T08:25:49.428+00:00",
+      "ended_at": "2026-10-06T08:25:49.428+00:00",
+      "error": null
+    },
+    {
+      "action_id": "action-00b80572b5fe",
+      "step_id": "S1",
+      "phase": "replay",
+      "intended_action": "Launch the fixture application.",
+      "attempted_action": "launch",
+      "delivered_input": {
+        "command": [
+          "C:\\Users\\testuser\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+          "examples\\fixture_app.py",
+          "runs\\fixture-output.txt"
+        ],
+        "pid": 6400
+      },
+      "observed_consequence": "Launch requested for pid 6400.",
+      "fallback_reason": null,
+      "status": "pass",
+      "evidence": [],
+      "started_at": "2026-10-06T08:25:49.428+00:00",
+      "ended_at": "2026-10-06T08:25:49.440+00:00",
+      "error": null
+    },
+    {
+      "action_id": "action-518a2c8c9e2e",
+      "step_id": "S1",
+      "phase": "replay",
+      "intended_action": "Observe the launched fixture window before interacting.",
+      "attempted_action": null,
+      "delivered_input": {},
+      "observed_consequence": "Observed window 'Desktop Agent Fixture'.",
+      "fallback_reason": null,
+      "status": "pass",
+      "evidence": [
+        {
+          "kind": "window",
+          "summary": "Observed window 'Desktop Agent Fixture' with 5 visible child controls.",
+          "data": {
+            "handle": 3868242,
+            "title": "Desktop Agent Fixture",
+            "class_name": "TkTopLevel",
+            "rect": [
+              180,
+              140,
+              616,
+              399
+            ],
+            "controls": [
+              {
+                "handle": 3670424,
+                "text": "",
+                "class_name": "TkChild",
+                "rect": [
+                  188,
+                  171,
+                  608,
+                  391
+                ]
+              },
+              {
+                "handle": 2098832,
+                "text": "",
+                "class_name": "Static",
+                "rect": [
+                  218,
+                  316,
+                  568,
+                  342
+                ]
+              },
+              {
+                "handle": 2491084,
+                "text": "",
+                "class_name": "Button",
+                "rect": [
+                  308,
+                  255,
+                  448,
+                  289
+                ]
+              },
+              {
+                "handle": 1901744,
+                "text": "",
+                "class_name": "TkChild",
+                "rect": [
+                  308,
+                  205,
+                  548,
+                  233
+                ]
+              },
+              {
+                "handle": 1377830,
+                "text": "",
+                "class_name": "Static",
+                "rect": [
+                  218,
+                  205,
+                  298,
+                  231
+                ]
+              }
+            ]
+          },
+          "path": null,
+          "timestamp": "2026-10-06T08:25:49.857+00:00"
+        }
+      ],
+      "started_at": "2026-10-06T08:25:49.440+00:00",
+      "ended_at": "2026-10-06T08:25:49.857+00:00",
+      "error": null
+    },
+    {
+      "action_id": "action-9ad802888e71",
+      "step_id": "S2",
+      "phase": "replay",
+      "intended_action": "Focus the Message entry by clicking inside the observed fixture window.",
+      "attempted_action": "click_relative",
+      "delivered_input": {
+        "x": 350,
+        "y": 219,
+        "anchor_window": "Desktop Agent Fixture"
+      },
+      "observed_consequence": "Clicked relative to observed window 'Desktop Agent Fixture'.",
+      "fallback_reason": null,
+      "status": "pass",
+      "evidence": [
+        {
+          "kind": "window",
+          "summary": "Observed window 'Desktop Agent Fixture' with 5 visible child controls.",
+          "data": {
+            "handle": 3868242,
+            "title": "Desktop Agent Fixture",
+            "class_name": "TkTopLevel",
+            "rect": [
+              180,
+              140,
+              616,
+              399
+            ],
+            "controls": [
+              {
+                "handle": 3670424,
+                "text": "",
+                "class_name": "TkChild",
+                "rect": [
+                  188,
+                  171,
+                  608,
+                  391
+                ]
+              },
+              {
+                "handle": 2098832,
+                "text": "",
+                "class_name": "Static",
+                "rect": [
+                  218,
+                  316,
+                  568,
+                  342
+                ]
+              },
+              {
+                "handle": 2491084,
+                "text": "",
+                "class_name": "Button",
+                "rect": [
+                  308,
+                  255,
+                  448,
+                  289
+                ]
+              },
+              {
+                "handle": 1901744,
+                "text": "",
+                "class_name": "TkChild",
+                "rect": [
+                  308,
+                  205,
+                  548,
+                  233
+                ]
+              },
+              {
+                "handle": 1377830,
+                "text": "",
+                "class_name": "Static",
+                "rect": [
+                  218,
+                  205,
+                  298,
+                  231
+                ]
+              }
+            ]
+          },
+          "path": null,
+          "timestamp": "2026-10-06T08:25:50.011+00:00"
+        }
+      ],
+      "started_at": "2026-10-06T08:25:49.857+00:00",
+      "ended_at": "2026-10-06T08:25:50.100+00:00",
+      "error": null
+    },
+    {
+      "action_id": "action-938ddf825c5c",
+      "step_id": "S2",
+      "phase": "replay",
+      "intended_action": "Deliver the literal testcase message.",
+      "attempted_action": "type_text",
+      "delivered_input": {
+        "literal_text": "hello from desktop agent"
+      },
+      "observed_consequence": "Literal text delivery requested; correctness requires a later readback or assertion.",
+      "fallback_reason": null,
+      "status": "pass",
+      "evidence": [],
+      "started_at": "2026-10-06T08:25:50.100+00:00",
+      "ended_at": "2026-10-06T08:25:50.355+00:00",
+      "error": null
+    },
+    {
+      "action_id": "action-7e0f95852a73",
+      "step_id": "S3",
+      "phase": "replay",
+      "intended_action": "Activate the Create Output button using an observed-window-relative click because Tk does not expose the caption through this Win32 backend.",
+      "attempted_action": "click_relative",
+      "delivered_input": {
+        "x": 378,
+        "y": 272,
+        "anchor_window": "Desktop Agent Fixture"
+      },
+      "observed_consequence": "Clicked relative to observed window 'Desktop Agent Fixture'.",
+      "fallback_reason": null,
+      "status": "pass",
+      "evidence": [
+        {
+          "kind": "window",
+          "summary": "Observed window 'Desktop Agent Fixture' with 5 visible child controls.",
+          "data": {
+            "handle": 3868242,
+            "title": "Desktop Agent Fixture",
+            "class_name": "TkTopLevel",
+            "rect": [
+              180,
+              140,
+              616,
+              399
+            ],
+            "controls": [
+              {
+                "handle": 3670424,
+                "text": "",
+                "class_name": "TkChild",
+                "rect": [
+                  188,
+                  171,
+                  608,
+                  391
+                ]
+              },
+              {
+                "handle": 2098832,
+                "text": "",
+                "class_name": "Static",
+                "rect": [
+                  218,
+                  316,
+                  568,
+                  342
+                ]
+              },
+              {
+                "handle": 2491084,
+                "text": "",
+                "class_name": "Button",
+                "rect": [
+                  308,
+                  255,
+                  448,
+                  289
+                ]
+              },
+              {
+                "handle": 1901744,
+                "text": "",
+                "class_name": "TkChild",
+                "rect": [
+                  308,
+                  205,
+                  548,
+                  233
+                ]
+              },
+              {
+                "handle": 1377830,
+                "text": "",
+                "class_name": "Static",
+                "rect": [
+                  218,
+                  205,
+                  298,
+                  231
+                ]
+              }
+            ]
+          },
+          "path": null,
+          "timestamp": "2026-10-06T08:25:50.506+00:00"
+        }
+      ],
+      "started_at": "2026-10-06T08:25:50.355+00:00",
+      "ended_at": "2026-10-06T08:25:50.599+00:00",
+      "error": null
+    },
+    {
+      "action_id": "action-2bfccfa305a8",
+      "step_id": "S3",
+      "phase": "replay",
+      "intended_action": "Wait for the application-created output file.",
+      "attempted_action": null,
+      "delivered_input": {},
+      "observed_consequence": "Observed output file 'runs\\fixture-output.txt'.",
+      "fallback_reason": null,
+      "status": "pass",
+      "evidence": [
+        {
+          "kind": "file",
+          "summary": "Observed fresh file runs\\fixture-output.txt.",
+          "data": {
+            "path": "runs\\fixture-output.txt",
+            "mtime": 1791275150.5991645,
+            "size": 24
+          },
+          "path": null,
+          "timestamp": "2026-10-06T08:25:50.800+00:00"
+        }
+      ],
+      "started_at": "2026-10-06T08:25:50.599+00:00",
+      "ended_at": "2026-10-06T08:25:50.800+00:00",
+      "error": null
+    },
+    {
+      "action_id": "action-4d1b80df6425",
+      "step_id": "S3",
+      "phase": "replay",
+      "intended_action": "Verify the produced file contains the literal input.",
+      "attempted_action": null,
+      "delivered_input": {},
+      "observed_consequence": "Expected text was present.",
+      "fallback_reason": null,
+      "status": "pass",
+      "evidence": [
+        {
+          "kind": "file-content",
+          "summary": "Read 24 characters from runs\\fixture-output.txt.",
+          "data": {
+            "path": "runs\\fixture-output.txt",
+            "expected_text": "hello from desktop agent"
+          },
+          "path": null,
+          "timestamp": "2026-10-06T08:25:50.805+00:00"
+        }
+      ],
+      "started_at": "2026-10-06T08:25:50.800+00:00",
+      "ended_at": "2026-10-06T08:25:50.805+00:00",
+      "error": null
+    }
+  ],
+  "cleanup": [
+    {
+      "action_id": "cleanup-cbdafc931d74",
+      "step_id": null,
+      "phase": "cleanup",
+      "intended_action": "Close only windows observed as owned by this run.",
+      "attempted_action": null,
+      "delivered_input": {},
+      "observed_consequence": "Owned windows closed and disappearance was verified.",
+      "fallback_reason": null,
+      "status": "pass",
+      "evidence": [],
+      "started_at": "2026-10-06T08:25:50.805+00:00",
+      "ended_at": "2026-10-06T08:25:51.308+00:00",
+      "error": null
+    },
+    {
+      "action_id": "cleanup-4d130e21d423",
+      "step_id": null,
+      "phase": "cleanup",
+      "intended_action": "Remove the temporary fixture output so the next run cannot pass on stale state.",
+      "attempted_action": null,
+      "delivered_input": {},
+      "observed_consequence": "File removal checked for runs\\fixture-output.txt.",
+      "fallback_reason": null,
+      "status": "pass",
+      "evidence": [],
+      "started_at": "2026-10-06T08:25:51.309+00:00",
+      "ended_at": "2026-10-06T08:25:51.309+00:00",
+      "error": null
+    }
+  ],
+  "metrics": {
+    "operation_count": 8,
+    "cleanup_operation_count": 2
+  }
+}

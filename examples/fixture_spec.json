@@ -1,0 +1,40 @@
+{
+  "id": "fixture-create-output",
+  "title": "Create an output file through the fixture GUI",
+  "application": "Desktop Agent Fixture",
+  "prerequisites": [
+    "The desktop session is unlocked.",
+    "The bundled Python runtime can run tkinter."
+  ],
+  "policy": {
+    "name": "observed-visible-controls",
+    "visible_controls_only": false,
+    "allow_shortcuts": false,
+    "allow_clipboard": false,
+    "allow_relative_coordinates": true,
+    "allow_file_read_verification": true,
+    "max_wait_seconds": 8.0
+  },
+  "steps": [
+    {
+      "id": "S1",
+      "action": "Open the fixture desktop application.",
+      "expected": "A window titled Desktop Agent Fixture is visible.",
+      "data": {}
+    },
+    {
+      "id": "S2",
+      "action": "Enter the literal message into the Message field.",
+      "expected": "The intended input has been delivered to the focused editing surface; correctness is later verified through the produced file.",
+      "data": {
+        "message": "hello from desktop agent"
+      }
+    },
+    {
+      "id": "S3",
+      "action": "Use the Create Output button.",
+      "expected": "The application creates a fresh output file containing the entered message.",
+      "data": {}
+    }
+  ]
+}
