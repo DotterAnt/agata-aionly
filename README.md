@@ -90,6 +90,5 @@ This is deliberately not a transcript of a model's private reasoning. It records
 
 The GPT-5.5-generated comparison toolkit used in the AGATA thesis, published without manual code changes. The author defined the development task and organized the experiments; GPT-6.1 Sol xhigh produced its development instruction.
 
-The `tdk-2026-10-24` tag preserves the first submission snapshot;
-`tdk-2026-10-25-final` records the supplemented documentation and MIT licensing.
-See [LICENSE](LICENSE). The original experiment-time code state cannot always be reconstructed from these later snapshots.
+The `tdk-2026-10-25` tag identifies the published thesis source and documentation snapshot with MIT licensing.
+See [LICENSE](LICENSE). The original experiment-time code state cannot always be reconstructed from this snapshot.
