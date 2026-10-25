@@ -85,3 +85,11 @@ This is deliberately not a transcript of a model's private reasoning. It records
 - Complex custom-rendered applications may need an OCR, accessibility, or image-matching backend added behind the same interface.
 - The system does not call an LLM by itself. It gives an AI or managed authoring workflow stable artifacts, operations, policies, and reports to use without making one conversation style part of correctness.
 - The fixture demonstrates a narrow real GUI path. It is evidence for that path, not a blanket claim that every desktop application is supported.
+
+## AGATA thesis materials
+
+The GPT-5.5-generated comparison toolkit used in the AGATA thesis, published without manual code changes. The author defined the development task and organized the experiments; GPT-6.1 Sol xhigh produced its development instruction.
+
+The `tdk-2026-10-24` tag preserves the first submission snapshot;
+`tdk-2026-10-25` records the supplemented documentation and MIT licensing.
+See [LICENSE](LICENSE). The original experiment-time code state cannot always be reconstructed from these later snapshots.
